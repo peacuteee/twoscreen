@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         binding.btnSuaHoSo.setOnClickListener {
             val sv = Student("123456", "Trần Thanh Tài", 3.8)
             val intent = Intent(this, EditProfileActivity::class.java)
-            intent.putExtra("DULIEU_SINHVIEN", sv)
+            intent.putExtra("DULIEU_SV", sv)
             startActivity(intent)
         }
     }
